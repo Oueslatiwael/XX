@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'workyt'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_14df3209407346a983546efa2467e610 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9145890328c9470b830b569b638bb1f9 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
