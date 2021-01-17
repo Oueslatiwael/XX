@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "myakscluster-212b"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "myakscluster-212b"
+  template:
+    metadata:
+      labels:
+        app: "myakscluster-212b"
+    spec:
+      containers:
+        - name: "myakscluster-212b"
+          image: "namereg.azurecr.io/myakscluster"
+          ports:
+          - containerPort: 80
